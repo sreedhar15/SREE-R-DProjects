@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fields description="SAMPLE ON BOARD" SIDPrefix="" validitySIDPrefix="Q">
+
+  <fieldGroup name="study" description="Study Parameters">
+    <field  name="amtsample"    description="Amount of Sample in Sample Cup"                   type="Decimal"  required="true"  defaultValue="" input="" tooltip="Enter in the amount (value only) of material to pipette into each sample cup." />
+    <field  name="sample1"      description="Sample 1 Description"                             type="Memo"  required="true"  defaultValue="" input="" tooltip="Enter the decription of sample 1. Example: Low-level sample/High negative sample/High-level sample/Low positive sample: prepared by adding X to X to target a value of Y S/CO; Low-level sample/High negative sample/High-level sample/Low positive sample: obtained with a analyte concentration of Y S/CO. " />
+    <field  name="sample2"      description="Sample 2 Description"                             type="Memo"  required="true"  defaultValue="" input="" tooltip="Enter the decription of sample 2. Example: Low-level sample/High negative sample/High-level sample/Low positive sample: prepared by adding X to X to target a value of Y S/CO; Low-level sample/High negative sample/High-level sample/Low positive sample: obtained with a analyte concentration of Y S/CO." />
+    <field  name="amttimet3"    description="Amount of Time on Board Time Point 3 Samples"     type="Int32"  required="true"  defaultValue="" input="" tooltip="Enter in the amount of time the samples must remain on the instrument prior to testing (value only)." />
+    <field  name="amttimet2"    description="Amount of Time on Board Time Point 2 Samples"     type="Int32"  required="true"  defaultValue="" input="" tooltip="Enter in the amount of time the samples must remain on the instrument prior to testing (value only)." />
+    <field  name="nrep"         description="Minimum Number of Replicates"                     type="Int32"  required="true"  defaultValue="" input="" tooltip="Enter in the minimum sample size for replicates." />
+    <field  name="units"        description="Unit of Measurement"                      type="List"    required="true"  defaultValue=""  input="" tooltip="Select the unit of measurement.">
+      <list>
+        <listItem text="S/CO"  value="S/CO" />
+        <listItem text="U/mL"  value="(U/mL)" />
+        <listItem text="AU/mL"  value="(AU/mL)" />
+        <listItem text="IU/mL"  value="(IU/mL)" />
+        <listItem text="mg/dL"  value="(mg/dL)" />
+        <listItem text="mg/L"  value="(mg/L)" />
+        <listItem text="mIU/mL"  value="(mIU/mL)" />
+        <listItem text="ng/dL"  value="(ng/dL)" />
+        <listItem text="ng/mL"  value="(ng/mL)" />
+        <listItem text="pg/mL"  value="(pg/mL)" />
+        <listItem text="ug/dl"  value="(ug/dl)" />
+        <listItem text="ug/m"  value="(ug/m)" />
+        <listItem text="ug/mL"  value="(ug/mL)" />
+        <listItem text="μg/dL"  value="(μg/dL)" />
+        <listItem text="μg/L"  value="(μg/L)" />
+        <listItem text="μg/mL"  value="(μg/mL)" />
+        <listItem text="μIU/mL"  value="(μIU/mL)" />
+        <listItem text="μmol/L"  value="(μmol/L)" />
+        <listItem text="μU/mL"  value="(μU/mL)" />
+      </list>
+    </field>
+    <field  name="evalstate"             description="Evaluation Criteria Statement"                type="List"    required="true"  defaultValue=""  input="" tooltip="Select the appropriate evaluation criteria statement (match to the PRD).">
+      <list>
+        <listItem text="1"  value="1" />
+        <listItem text="2"  value="2" />
+        <listItem text="3"  value="3" />
+        <listItem text="4"  value="4" />
+      </list>
+    </field>
+    <field  name="prdhours"             description="Product Requirement Hours"                type="List"    required="true"  defaultValue=""  input="" tooltip="Enter the number of hours tested for the PRD.">
+      <list>
+        <listItem text="1"  value="1" />
+        <listItem text="2"  value="2" />
+        <listItem text="3"  value="3" />
+        <listItem text="4"  value="4" />
+        <listItem text="5"  value="5" />
+        <listItem text="6"  value="6" />
+        <listItem text="7"  value="7" />
+        <listItem text="8"  value="8" />
+        <listItem text="9"  value="9" />
+      </list>
+    </field>
+    <field  name="prdvalue1"        description="Product Requirement Value (Units)"                      type="Decimal"  required="true"  defaultValue="" input="" tooltip="Enter the PRD value in units for a bias requirement." />
+    <field  name="prdvalue2"        description="Product Requirement Value (%)"                          type="Decimal"  required="true"  defaultValue="" input="" tooltip="Enter the PRD value in %s for a percent bias requirement." />
+    <field  name="biassamples"      description="Samples Evaluated Against Bias"                         type="Memo"  required="true"  defaultValue="" input="" tooltip="Enter the types of samples or controls and range that are evaluated against the bias requirement. Example: samples or controls &lt; 1.00 S/CO." />
+    <field  name="pbiassamples"     description="Samples Evaluated Against Percent Bias"                 type="Memo"  required="true"  defaultValue="" input="" tooltip="Enter the types of samples or controls and range that are evaluated against the percent bias requirement. Example: samples or controls within the range of 1.00 to 4.00 S/CO." />
+    <field  name="obvalue3bias"     description="Actual Difference Time Point 3"                         type="Decimal"  required="true"  defaultValue="" input="" tooltip="Enter the observed bias (number only) from table 1." />
+    <field  name="obvalue3pbias"    description="Actual % Difference Time Point 3"                       type="Decimal"  required="true"  defaultValue="" input="" tooltip="Enter the observed % bias (number only) from table 1." />
+    <field  name="obvalue2bias"     description="Actual Difference Time Point 2"                         type="Decimal"  required="true"  defaultValue="" input="" tooltip="Enter the observed bias (number only) from table 1." />
+    <field  name="obvalue2pbias"    description="Actual % Difference Time Point 2"                       type="Decimal"  required="true"  defaultValue="" input="" tooltip="Enter the observed % bias (number only) from table 1." />
+  </fieldGroup>
+</fields>
